@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin-top: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question {
+    font-size: 3em;
+}
+
+button {
+    border: 0;
+    height: 3em;
+    font-size: larger;
+    border-radius: 9px;
+    background-color: lightblue;
+    color: black;
+}
+
+.button-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
